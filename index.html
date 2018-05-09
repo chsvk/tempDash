@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<head>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+   <title>Redirection Page</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    console.log('fetch method');
+      fetch('https://vapi.cyrrup.com/api/v1/vbb-auth/login/', {
+        headers: {
+          'Content-type': 'application/json'
+        },
+        body: {
+          'username': 'chsvk',
+          'password': 'Ac49ak47'
+        }
+      }).then(response =>{
+        console.log(response);
+      }).catch(error => {
+        console.log(error.response);
+      });
+</script>
